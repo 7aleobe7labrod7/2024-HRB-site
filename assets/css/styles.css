@@ -1,0 +1,48 @@
+/* Contenido de styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+/* ESTILO GENERAL */
+body {
+  background-color: #ffffff;
+}
+
+/* NAVBAR */
+.navbar-nav {
+  margin-right: auto;
+}
+
+.nav-link {
+  color: #0097b2;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #d3f5d3;
+  color: #0097b2;
+}
+
+.navbar-brand img:hover {
+  opacity: 0.8;
+}
+
+/* CARRUSEL */
+/* .carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+} */
+
+.carousel-caption h5 {
+  font-size: 2rem;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+/* GRILLA */
+.card-img-top {
+  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+  height: auto; /* Se ajustará automáticamente manteniendo la proporción original */
+}
+
+/* Estilo para la clase "titulo1" */
