@@ -1,0 +1,267 @@
+<!-- HEAD -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eureka Aids: Centro de Salud y Seguridad Organizacional</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha384-o3udHmYkG8hBByv4Fb6F8FD+fr6xdAgcJrPq6LKOYfInzV9pGStoTpDO9YfiSHfN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha384-o3udHmYkG8hBByv4Fb6F8FD+fr6xdAgcJrPq6LKOYfInzV9pGStoTpDO9YfiSHfN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font - Audiowide -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tu estilo personalizado -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+
+  <!-- BODY -->
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand ms-auto"
+          href="#"
+          onmouseover="handleMouseOver(this)"
+          onmouseout="handleMouseOut(this)"
+        >
+          <img
+            id="navbar-logo"
+            src="/assets/logo-eureka.png"
+            alt="Logo"
+            class="d-inline-block align-text-top"
+            style="width: 80px; max-width: 100%"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="index.html"
+                  onmouseover="handleMouseOver(this)"
+                  onmouseout="handleMouseOut(this)"
+                  >Inicio</a
+                >
+              </li>
+              
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="presentacion.html"
+                onmouseover="handleMouseOver(this)"
+                onmouseout="handleMouseOut(this)"
+                >Presentación</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="servicios.html"
+                onmouseover="handleMouseOver(this)"
+                onmouseout="handleMouseOut(this)"
+                >Servicios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="contacto.html"
+                onmouseover="handleMouseOver(this)"
+                onmouseout="handleMouseOut(this)"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br />
+        <!-- GRILLA -->
+    <!-- Sección de Servicios -->
+    <div class="container mt-4">
+        <div class="row">
+          <!-- Servicio 1 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="assets/grilla-image/alcohol y drogas.png"
+                class="card-img-top mx-auto"
+                alt="Examen Alcohol y Drogas"
+  
+              />
+              <div class="card-body">
+                <h5 class="card-title" style="color: #0097b2;">Examen Alcohol y Drogas</h5>
+                <p class="card-text">
+                  Descripción del servicio Exámen Alcohol y Drogas.
+                </p>
+                <a href="ruta-de-cotizacion" class="btn btn-info btn-cotizar">Cotizar</a>
+              </div>
+              
+            </div>
+          </div>
+  
+          <!-- Servicio 2 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="assets/grilla-image/Examenes Medicos.png"
+                class="card-img-top mx-auto"
+                alt="Examenes Médicos"
+               
+              />
+              <div class="card-body">
+                <h5 class="card-title">Exámenes Médicos</h5>
+                <p class="card-text">
+                  Descripción del servicio Exámenes Médicos.
+                </p>
+                <a href="ruta-de-cotizacion" class="btn btn-info">Cotizar</a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Servicio 3 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="assets/grilla-image/Campanas de salud.png"
+                class="card-img-top"
+                alt="Campaña Salud"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Campain Salud</h5>
+                <p class="card-text">Descripción del servicio Campaña Salud.</p>
+                <a href="ruta-de-cotizacion" class="btn btn-info">Cotizar</a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Servicio 4 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="assets/grilla-image/Examenes de Laboratorio.png"
+                class="card-img-top"
+                alt="Examen Alcohol y Drogas"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Examen de Laboratorio</h5>
+                <p class="card-text">
+                  Descripción del servicio Examen de Laboratorio.
+                </p>
+                <a href="ruta-de-cotizacion" class="btn btn-info">Cotizar</a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Servicio 5 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="assets/grilla-image/Psicotecnico 2.png"
+                class="card-img-top"
+                alt="Examen Alcohol y Drogas"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Examen Psicotecnico</h5>
+                <p class="card-text">
+                  Descripción del servicio ExamenPsicotecnico.
+                </p>
+                <a href="ruta-de-cotizacion" class="btn btn-info">Cotizar</a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Servicio 6 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="assets/grilla-image/Examenes Preocupacionales.png"
+                class="card-img-top"
+                alt="Examen Alcohol y Drogas"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bateria Examenes Preocupacionales</h5>
+                <p class="card-text">
+                  Descripción del servicio Bateria de Examenes de
+                  Preocupacionales.
+                </p>
+                <a href="ruta-de-cotizacion" class="btn btn-info">Cotizar</a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Puedes agregar más servicios siguiendo el mismo patrón -->
+        </div>
+      </div>
+  
+<!-- Footer -->
+<footer class="text-center mt-5" style="color: #ffffff; background-color: #5271ff;">
+
+  <!-- Información de la empresa -->
+  <div>
+    <br>
+    <h2>Centro de Salud y Seguridad Organizacional</h2><br>
+    <!-- Logo -->
+    <img src="assets/logo-eureka.png" alt="Logo" style="width: 250px;"><br><br>
+    <!-- Número de WhatsApp -->
+    <p><i class="fab fa-whatsapp"></i>  <b>WHATSAPP: </b><a style="color: #ffffff;" href="https://wa.me/56993056419" target="_blank">+56993056419</a></p>
+    <!-- Correo electrónico -->
+    <p><i style="color:black" class="far fa-envelope"></i> <b>CORREO: </b>> <a style="color: #ffffff;" href="mailto:ventas@eurekaid.net">ventas@eurekaid.net</a></p>
+  </div>
+  <hr>
+
+  <!-- Enlaces -->
+  <ul class="list-unstyled ms-auto">
+    <li><a style="color: #ffffff" href="index.html">Inicio</a></li>
+    <li><a style="color: #ffffff" href="presentacion.html">Presentación</a></li>
+    <li><a style="color: #ffffff" href="servicios.html">Servicios</a></li>
+    <li><a style="color: #ffffff" href="contacto.html">Contacto</a></li>
+  </ul>
+
+  <!-- Copyright -->
+  <p class="mt-5">Copyright © 2024 Eureka Aids. Desarrollado por Alex Labbe.</p>
+</footer>
+
+    <!-- BOTON  -->
+    <!-- Bootstrap JS and Popper.js (make sure to include these) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tu archivo JavaScript -->
+    <script src="main.js"></script>
+  </body>
+</html>
