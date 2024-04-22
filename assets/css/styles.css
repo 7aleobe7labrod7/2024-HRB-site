@@ -3,7 +3,7 @@
 
 /* ESTILO GENERAL */
 body {
-  background-color: #ffffff;
+  background-color: #B20B0B;
 }
 
 /* NAVBAR */
@@ -12,20 +12,20 @@ body {
 }
 
 .nav-link {
-  color: #0097b2;
+  color: B20B0B;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-link:hover {
-  background-color: #d3f5d3;
-  color: #0097b2;
+  background-color: #B20B0B;
+  color: #fefef6;
 }
 
 .navbar-brand img:hover {
   opacity: 0.8;
 }
 
-/* CARRUSEL */
+/* CAROUSEL */
 /* .carousel-caption {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
