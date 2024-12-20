@@ -8,6 +8,22 @@ function handleMouseOver(element) {
 function handleMouseOut(element) {
   element.style.opacity = '0.8';
 }
+window.addEventListener('load', () => {
+  const cards = document.querySelectorAll('.card');
+  let maxHeight = 0;
+
+  cards.forEach(card => {
+    const cardHeight = card.getBoundingClientRect().height;
+    if (cardHeight > maxHeight) {
+      maxHeight = cardHeight;
+    }
+  });
+
+  cards.forEach(card => {
+    card.style.height = `${maxHeight}px`;
+  });
+});
+
 
 // // Función para ajustar el tamaño del logo
 // function adjustLogoSize() {

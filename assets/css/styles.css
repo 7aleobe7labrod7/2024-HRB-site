@@ -1,9 +1,117 @@
 /* Contenido de styles.css */
+@import url('https://fonts.googleapis.com/css2?family=SemiLight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Verdana&display=swap');
+
+
+/* ESTILO GENERAL */
+body {
+  background-color: #009b7d;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* NAVBAR */
+.navbar-nav {
+  margin-right: auto;
+}
+
+.nav-link {
+  color: #009b7d;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #009b7d;
+  color: #ffffff;
+}
+
+.navbar-brand img:hover {
+  opacity: 0.8;
+}
+
+/* Ajuste de ancho máximo para el contenedor que envuelve el carrusel y las grillas */
+.container {
+  max-width: 100%; /* Establece el ancho máximo del contenedor al 95% del contenedor padre */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+/* CAROUSEL */
+/* .carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+} */
+
+.carousel-caption h5 {
+  font-size: 2rem;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+/* GRILLA 768px default*/
+@media (max-width: 100%) {
+  .card {
+    background-color: #ffffff;
+    height: 100%; /* Asegura que la tarjeta ocupe toda la altura disponible */
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: column; /* Establece la dirección de los elementos secundarios */
+    align-items: stretch;
+  }
+}
+
+.card-img-top {
+  width: 100%;
+  /* La imagen ocupará el 100% del ancho del contenedor */
+  height: auto;
+  /* Se ajustará automáticamente manteniendo la proporción original */
+}
+
+/* Estilo para el título de la tarjeta */
+.card-title {
+  color: #009b7d;
+  font-weight: bold;
+  font-family: Verdana, sans-serif;
+}
+
+/* Estilo para el párrafo de la tarjeta */
+.card-text {
+  font-family: Verdana, sans-serif;
+  font-style: italic;
+  font-stretch: condensed;
+}
+
+/* Estilo para el fondo de la tarjeta */
+.card {
+  background-color: #ffffff;
+}
+
+.btn-info{
+  background-color: #009b7d;
+  color:#fefef6;
+}
+
+/* Ajuste de posición del botón dentro de la tarjeta */
+.card-body {
+  position: relative; /* Establece la posición relativa para que el botón absoluto se posicione correctamente */
+  flex-grow: 1; /* Permite que el cuerpo de la tarjeta crezca para ocupar el espacio disponible */
+  
+}
+
+#btn-cotizar {
+  position: absolute; 
+  bottom: 0; /* Lo posiciona en la parte inferior de la tarjeta */
+  right: 0; /* Lo posiciona en el extremo derecho de la tarjeta */
+  margin-bottom: 10px; /* Ajusta el margen inferior según sea necesario */
+  margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+}
+
+/* Contenido de styles.css */
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 /* ESTILO GENERAL */
 body {
-  background-color: #B20B0B;
+  background-color: #009b7d;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* NAVBAR */
@@ -17,7 +125,7 @@ body {
 }
 
 .nav-link:hover {
-  background-color: #B20B0B;
+  background-color: #009b7d;
   color: #fefef6;
 }
 
@@ -41,8 +149,63 @@ body {
 
 /* GRILLA */
 .card-img-top {
-  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
-  height: auto; /* Se ajustará automáticamente manteniendo la proporción original */
+  width: 100%;
+  /* La imagen ocupará el 100% del ancho del contenedor */
+  height: auto;
+  /* Se ajustará automáticamente manteniendo la proporción original */
 }
+
+/* Estilo para la clase "titulo1" */
+
+/* Estilos para la grilla responsiva */
+.row {
+  display: flex; /* Usar flexbox para la distribución */
+  flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan cuando no haya suficiente espacio */
+}
+
+.col-12 {
+  flex: 0 0 100%; /* Establecer el ancho de cada columna al 100% en dispositivos pequeños */
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 50%; /* Dividir el espacio en dos columnas en dispositivos medianos */
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+    flex: 0 0 33.333%; /* Dividir el espacio en tres columnas en dispositivos grandes */
+  }
+}
+.card {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
+.card {
+  height: 100%; /* Asegura que la tarjeta ocupe toda la altura disponible */
+}
+
+.card-body {
+  flex-grow: 1; /* Permite que el cuerpo de la tarjeta crezca para ocupar el espacio disponible */
+}
+
+/* FOOTER */
+/* boton wsapp */
+.whatsapp-button {
+  width: auto;
+  padding: 10px 20px;
+  text-align: center;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  display: inline-block; /* Asegúrate de que sea un elemento en línea */
+  max-width: 300px; /* Ajusta el ancho máximo si es necesario */
+}
+
 
 /* Estilo para la clase "titulo1" */
